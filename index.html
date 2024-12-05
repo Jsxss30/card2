@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video</title>
+  <title>Tarjeta</title>
   <style>
+    /* Asegurar que la página ocupe toda la pantalla */
     body, html {
       margin: 0;
       padding: 0;
@@ -16,10 +17,14 @@
       justify-content: center;
       align-items: center;
     }
+
+    /* Estilos para el video */
     video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ajusta el video sin deformarlo */
+      width: 100%; /* Ocupa el 100% del ancho */
+      height: auto; /* Ajusta la altura proporcionalmente */
+      max-height: 100%; /* No supera el 100% de la altura de la pantalla */
+      object-fit: contain; /* Asegura que el video no se deforme */
+      background-color: #000; /* Fondo del video (en caso de bordes visibles) */
     }
   </style>
 </head>
